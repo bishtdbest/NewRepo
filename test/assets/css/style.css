@@ -89,7 +89,7 @@ aside{ margin-bottom: 20px;}
 
 /* main-container start */
 
-.event-list{ display: flex; flex-wrap: wrap; justify-content: space-between;}
+.event-list{ display: flex; flex-wrap: wrap;}
 .event-item{ margin-bottom: 20px ; width: 100%; margin-right: 0;}
 .event-item figure {background: #f2f2f2; text-align: center; padding: 10px; margin-bottom: 10px;}
 .main-container h2{margin-bottom: 10px; font-weight: bold; font-size: 16px;}
