@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus, textarea:focus{ outline: 0 none;}
+
+*{ box-sizing: border-box;}
+img{ max-width: 100%; }
+
+strong{font-weight: bold;}
+
+.clearfix:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+body{ font: normal 15px/1.4 Helvetica, Arial, sans-serif; color: black; background: #f2f2f2;}
+
+a{color: #46509e; text-decoration: none; display: inline-block; transition: all 0.3s ease ;}
+p{margin-bottom: 20px;}
+
+.wrapper{ padding: 20px; max-width: 1440px; margin: 0 auto;}
+
+/* header start*/
+.header{margin-bottom: 20px;}
+/* header end*/
+
+/* container start*/
+.container{margin-bottom: 20px;}
+aside,.event-item{background: white; border-radius: 6px; padding: 10px;}
+
+h4{font-size: 18px;}
+
+/* sidebar start*/
+aside{ margin-bottom: 20px;}
+.year-list{ justify-content: space-between; display:flex; flex-wrap: wrap; margin-bottom: 20px;}
+.year-btn{background:#c5e09b; padding: 10px 0; display: inline-block; margin-bottom: 10px; border-radius: 6px; width: 45%; text-align: center;cursor: pointer; transition: all .51s ease;}
+.year-btn.active,.year-btn:hover{background:#7bbb10;}
+
+.sidebar h5{font-size: 14px; text-align: center; margin-bottom: 20px;}
+.sidebar h5 span{ border-bottom: solid 1px #d0d0d0; padding-bottom: 2px; display: inline-block;}
+/* sidebar end*/
+
+/* main-container start */
+
+.event-list{ display: flex; flex-wrap: wrap; justify-content: space-between;}
+.event-item{ margin-bottom: 20px ; width: 100%; margin-right: 0;}
+.event-item figure {background: #f2f2f2; text-align: center; padding: 10px; margin-bottom: 10px;}
+.main-container h2{margin-bottom: 10px; font-weight: bold; font-size: 16px;}
+.event-item .label-value{color: #46509e;}
+/* main-container end */
+
+/* container end */
+/* footer start */
+footer {text-align: center; padding: 10px 0 20px;}
+/* footer end */
+
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 699px) { 
+.container {display: flex;}
+aside{width: 20%; margin-right: 20px; margin-bottom: 0;}
+.main-container{width: 80%;}
+.event-item{ margin-bottom: 20px ; width: 23%; margin-right: 2%;}
+}
+
+@media (min-width: 700px) and (max-width: 1024px) { 
+.event-item{ margin-bottom: 20px ; width: 48%; margin-right: 2%;}
+ }
